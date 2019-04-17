@@ -1,0 +1,17 @@
+{
+  "name": "ishetonline",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "firebase-admin": "^7.2.0",
+    "play-sound": "^1.1.3"
+  }
+}
