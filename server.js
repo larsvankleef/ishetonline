@@ -1,4 +1,6 @@
-const player = require('play-sound')(opts = {})
+const player = require('play-sound')(opts = {
+  player: 'mpg321'
+})
 
 const axios = require('axios')
 
