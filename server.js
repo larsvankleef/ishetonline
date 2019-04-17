@@ -1,20 +1,19 @@
 const player = require('play-sound')(opts = {
   player: 'mpg321'
 })
-
 const axios = require('axios')
 
 let online = false
 
 setInterval(async () => {
   const status = await ping()
-  if (online != status) {        
+  if (online != status) {
     if (status) {
       console.log('online')
-      player.play('./holygrenade.mp3')
+      player.play('./holygrenade.mp3', { mpg321: ['-g', 2] })
     } else {
       console.log('offline')
-      player.play('./css1_scream1.mp3')
+      player.play('./css1_scream1.mp3', { mpg321: ['-g', 2] })
     }
   }
 
