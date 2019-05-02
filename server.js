@@ -10,10 +10,10 @@ setInterval(async () => {
   if (online != status) {
     if (status) {
       console.log('online')
-      player.play('./holygrenade.mp3', { mpg321: ['-g', 2] })
+      player.play('./holygrenade.mp3', { mpg321: ['-g', 5] })
     } else {
       console.log('offline')
-      player.play('./css1_scream1.mp3', { mpg321: ['-g', 2] })
+      player.play('./css1_scream1.mp3', { mpg321: ['-g', 5] })
     }
   }
 
